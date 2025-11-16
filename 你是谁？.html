@@ -73,7 +73,7 @@ form{
   </div>
 <div id="jiemian"> 
   <button id="zhuce" type="submit" style=" left: 0%;position: absolute;  font-size: 10px;background-color: rgb(0, 0, 0,0);color: blue;"onclick="niganma(myAudio)"title="千万不要点"><ins>神秘小按钮</ins></button>  
-  <form id="请登录" action="实验.html" method="get">     <!--伪登录系统,点击登录后跳转实验.html-->
+  <form id="请登录" action="我的网页/实验.html" method="get">     <!--伪登录系统,点击登录后跳转实验.html-->
     Welcome！</br>
     <button id="denglu" type="submit" onclick="cunchu()" style="font-size: 10px; color: white;background-color: #000000;border: 2px solid white;border-radius: 5px;padding: 5px 15px;left: 80%;position: absolute;">认证</button></br>
     <input id="daihao" style="border: 2px solid black;" type="text" placeholder="你的代号是？" required></br></br>
@@ -89,7 +89,7 @@ form{
   function cunchu(){
     const mingzi=document.getElementById('daihao').value;
     localStorage.setItem('mingzi',mingzi);
-    window.location.href="实验.html";  
+    window.location.href="我的网页/实验.html";  
   }
 </script>
 </body>
