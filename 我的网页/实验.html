@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <audio id="aaa" autoplay loop style="display: none;";>
+    <source src="M500003ll0Vx1x9ypg.mp3" type="audio/mp3" >
+  </audio> 
+  <link rel="icon" type="image/x-icon" href="https://ts1.tc.mm.bing.net/th/id/OIP-C.wHms7Lh6jRuBmIWPMTbF8wAAAA?w=202&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimgc1&dpr=1.8&pid=3.1&rm=2">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodbye World!</title>
+  <style>
+body {
+  background-color: black;
+}
+#xinxi{
+  position: absolute;
+  background-color:black;
+  color: white;
+  padding: 5px;
+  font-size: 50px;
+  border-radius: 15%;
+  left: 70vh;
+  top: 0% ;
+  animation:chuxian 3s ease-out forwards;
+}
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+   background-color: #575757;
+}
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+  color: white;
+}
+@keyframes chuxian{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes bianda{
+  0%{
+    border: 0 0 0% 0 solid rgb(240, 30, 30);
+  }
+  100%{
+    border:0 0 100% 0 solid rgb(255, 64, 64);
+  }
+
+}
+</style>
+</head>
+<body>
+<h1 id="xinxi"></h1>
+<div class="sidebar">
+  <p span style="color: white;font-size: large;">我的任务书</p><hr>
+  <a href="https://github.com/ashamej/Tasks/tree/main/第一阶段">第一阶段</a>
+  <a href="https://github.com/ashamej/Tasks/tree/main/第二阶段">第二阶段</a>
+  <a href="https://github.com/ashamej/Tasks/tree/main/第三阶段">第三阶段</a>
+  <a href="https://github.com/ashamej/Tasks/tree/main/第四阶段">第四阶段</a>
+  <a href="你是谁？.html" span style="color: palegreen;">返回登陆</a>
+</div>
+ <div class="main-content">
+ </br></br></br></br>
+        <h1 span style="text-align: center;">这是我的第一个网站:)</br>因为太菜了，感觉没什么好写的:(</br><span style="color: greenyellow;">祝你快乐XD</h1>
+    </div>
+</body>
+</html>
+<script>
+  const mingzi=localStorage.getItem('mingzi');
+  document.getElementById('xinxi').innerText = `欢迎，${mingzi}!`;
+</script>
+<script>
+  const audio=document.getElementById('aaa');
+  audio.volume=0.1;
+</script>
